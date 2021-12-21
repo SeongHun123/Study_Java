@@ -1,4 +1,4 @@
-package ch12;
+package ch12_this;
 
 public class Person {
 	String name;

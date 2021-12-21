@@ -1,4 +1,4 @@
-package ch06;
+package ch06_constructor;
 
 public class StudentTest {
 	public static void main(String[] args) {

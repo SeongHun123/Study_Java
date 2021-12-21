@@ -1,4 +1,4 @@
-package ch11;
+package ch11_stringbuffer;
 
 public class MakeReport {
 	//StringBuffer 문자열을 추가하거나 변겨할때 쓰는 자료형 +로 하는건 메모리를 많이 잡아머기때문에 주로 이걸 씀
