@@ -1,23 +1,26 @@
 package ch24;
 
 public class Subject {
-	private String name;
-	private int scorePoint;
+	private String subjectName;
+	private int subjectScore;
+
 	
-	
-	
-	public String getName() {
-		return name;
+	public int getSubjectScore() {
+		return subjectScore;
 	}
-	public void setName(String name) {
-		this.name = name;
+
+	public void setSubjectScore(int subjectScore) {
+		this.subjectScore = subjectScore;
 	}
-	public int getScorePoint() {
-		return scorePoint;
+
+	public String getSubjectName() {
+		return subjectName;
 	}
-	public void setScorePoint(int scorePoint) {
-		this.scorePoint = scorePoint;
+
+	public void setSubjectName(String subjectName) {
+		this.subjectName = subjectName;
 	}
+
 
 	
 }

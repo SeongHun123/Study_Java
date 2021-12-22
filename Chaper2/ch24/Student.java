@@ -3,37 +3,33 @@ package ch24;
 import java.util.ArrayList;
 
 public class Student {
-	
-	int studentId;
-	String studentName;
-	
-	ArrayList<Subject> subjectList;
-	
-	
-	Student(int studentId, String studentName){
-		this.studentId = studentId;
-		this.studentName = studentName;
+		int studentId;
+		String studentName;
+		ArrayList<Subject> subjectlist;
 		
-		subjectList = new ArrayList<>();
-	}
-	
-	public void addSubject(String name, int point) {
-		Subject subject = new Subject();
-		subject.setName(name);
-		subject.setScorePoint(point);
-		
-		subjectList.add(subject);
-	}
-	
-	public void showScoreInfo() {
-		
-		int total = 0;
-		for(Subject subject : subjectList) {
+		public Student(int studnetId, String studentName) {
+			this.studentId = studnetId;
+			this.studentName = studentName;
 			
-			total+= subject.getScorePoint();
-			System.out.println(studentName+"학생의"+subject.getName()+"과목의 성적은"+ subject.getScorePoint()+"입니다.");
+			subjectlist = new ArrayList<Subject>();
 		}
 		
-		System.out.println(studentName + "학생의 총점은"+total+"점 입니다.");
-	}
+		public void addSubject(String Name, int Score) {
+			Subject subject = new Subject();
+			
+			subject.setSubjectName(Name);
+			subject.setSubjectScore(Score);
+			subjectlist.add(subject);
+		}
+		
+		public void showStudentInfo() {
+			int total = 0;
+			
+			for(Subject s : subjectlist) {
+				
+				total += s.getSubjectScore();
+				System.out.println(studentName+"학생의"+s.getSubjectName()+"과목의 성적은"+s.getSubjectScore()+"입니다.");
+			}
+			System.out.println(studentName+"학생의 총점은"+total+"입니다.");
+		}
 }
