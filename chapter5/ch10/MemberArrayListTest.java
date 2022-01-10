@@ -1,0 +1,24 @@
+package ch10;
+
+public class MemberArrayListTest {
+	
+	public static void main(String [] args) {
+		
+		MemberArrayList memberArrayList = new MemberArrayList();
+		
+		Member memberLee = new Member(1001,"이순신");
+		Member memberkim = new Member(1002,"김유신");
+		Member memberkang = new Member(1003,"강감찬");
+		Member memberHong= new Member(1004,"홍길동");
+		
+		memberArrayList.addMember(memberLee);
+		memberArrayList.addMember(memberkim);
+		memberArrayList.addMember(memberkang);
+		memberArrayList.addMember(memberHong);
+		
+		memberArrayList.showAllMember();
+		
+		memberArrayList.removeMember(memberkim.getMemberId());
+		memberArrayList.showAllMember();
+	}
+}
